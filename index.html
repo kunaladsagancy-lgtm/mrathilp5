@@ -1,189 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Marathi Trader Abhi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marathi Abhi</title>
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1321364243223463'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1321364243223463&ev=PageView&noscript=1"
+    /></noscript>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(180deg, #050a30 0%, #000c66 50%, #7ec8e3 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
 
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1238207425191008');
-fbq('track', 'PageView');
-</script>
+        .card {
+            background-color: #111827;
+            width: 90%;
+            max-width: 400px;
+            padding: 40px 20px;
+            border-radius: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
 
-<style>
+        .logo-container {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: #fff;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
 
-*{
-box-sizing:border-box;
-margin:0;
-padding:0;
-}
+        .logo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
 
-body{
-font-family:Arial;
-background:#0b0f19;
-color:white;
-display:flex;
-justify-content:center;
-align-items:center;
-min-height:100vh;
-}
+        h1 {
+            font-size: 24px;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
 
-.container{
-width:380px;
-background:#111827;
-border-radius:25px;
-padding:30px;
-text-align:center;
-box-shadow:0 10px 40px rgba(0,0,0,0.7);
-}
+        .info-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+            font-size: 16px;
+            line-height: 2;
+        }
 
-/* LOGO */
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(90deg, #7cf0e5, #49dcb1);
+            color: #000;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 40px;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 25px;
+            gap: 10px;
+        }
 
-.logo{
-width:120px;
-height:120px;
-border-radius:100px;
-object-fit:cover;
-margin-bottom:15px;
-animation:float 3s ease-in-out infinite;
-}
+        .footer-text {
+            font-size: 13px;
+            color: #9ca3af;
+        }
 
-@keyframes float{
-0%{transform:translateY(0)}
-50%{transform:translateY(-10px)}
-100%{transform:translateY(0)}
-}
-
-h1{
-font-size:28px;
-margin-bottom:5px;
-}
-
-.badge{
-background:linear-gradient(45deg,#ff512f,#ff9966);
-padding:10px 20px;
-border-radius:30px;
-display:inline-block;
-margin:15px 0;
-font-weight:bold;
-}
-
-.telegram-btn{
-display:block;
-margin:20px 0;
-padding:18px;
-border-radius:50px;
-background:linear-gradient(90deg,#00c6ff,#0072ff);
-color:white;
-font-weight:bold;
-font-size:18px;
-text-decoration:none;
-animation:blink 1.2s infinite;
-}
-
-.telegram-btn img{
-width:22px;
-vertical-align:middle;
-margin-right:8px;
-}
-
-@keyframes blink{
-0%{opacity:1;box-shadow:0 0 10px #00c6ff;}
-50%{opacity:0.7;box-shadow:0 0 25px #00c6ff;}
-100%{opacity:1;box-shadow:0 0 10px #00c6ff;}
-}
-
-.text{
-margin-top:15px;
-line-height:1.6;
-font-size:16px;
-}
-
-.highlight{
-color:#ff6b6b;
-font-weight:bold;
-}
-
-.profit{
-color:#ffd700;
-font-size:20px;
-margin:15px 0;
-font-weight:bold;
-}
-
-.features{
-margin-top:15px;
-text-align:left;
-line-height:2;
-font-size:15px;
-}
-
-.footer{
-margin-top:20px;
-font-size:13px;
-color:#9ca3af;
-}
-
-</style>
+        .footer-text a {
+            color: #49dcb1;
+            text-decoration: none;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="container">
+<div class="card">
+    <div class="logo-container">
+        <img src="logo.png" alt="Logo">
+    </div>
 
-<img src="logo.png" class="logo">
+    <h1>Marathi Abhi</h1>
 
-<h1>Marathi Trader Abhi</h1>
-<div>💸🏆</div>
+    <div class="info-list">
+        <div>📊 NIFTY · BANKNIFTY · SENSEX</div>
+        <div>✅ DAILY CALLS AVAILABLE</div>
+        <div>⭐ 95% Accuracy</div>
+        <div>🎯 6+ Years Experience</div>
+    </div>
 
-<div class="badge">📊 17 Years Trading Experience</div>
+    <a href="https://t.me/+edELouyCc6U1ZTc1" class="btn">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" width="25" alt="TG Logo">
+        Join Telegram
+    </a>
 
-<div>👇👇👇</div>
-
-<a class="telegram-btn" href="https://t.me/+Xz3IA9gyrkdiYmI9">
-
-<img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
-
-JOIN TELEGRAM CHANNEL
-
-</a>
-
-<div class="text">
-
-Do you want to make money from trading?<br><br>
-
-<span class="highlight">
-If yes, then click on the Telegram button above 🚀
-</span>
-
-</div>
-
-<div class="profit">
-💎 DAILY PROFIT GUARANTEE 💎
-</div>
-
-<div class="features">
-
-📊 Live Daily Trades directly from my portfolio<br>
-🔥 Exclusive Signals used by professionals<br>
-💯 High Accuracy with proven consistency<br>
-⚡ Instant Updates with real-time alerts
-
-</div>
-
-<div class="footer">
-© 2026 Marathi Trader Abhi - All rights reserved
-</div>
-
+    <div class="footer-text">
+        Contact Only For Ads Setup 👑<br>
+        Ads Managed By <a href="https://t.me/+jE7sEbzR23gwM2U1">Kunal</a>
+    </div>
 </div>
 
 </body>
